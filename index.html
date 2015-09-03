@@ -31,9 +31,19 @@
     		<main>
     		<section id="main">
     			<article>
-    				<h2>My Headline</h2>
-    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique ultrices leo, eget ornare massa condimentum sed. Integer ultrices iaculis ex eget convallis. Aliquam non condimentum lectus. Vivamus vitae fermentum tellus. Morbi maximus tincidunt velit, id posuere mi viverra id. Vestibulum ut placerat nisi. Donec sed posuere est. Aliquam erat volutpat. Phasellus gravida dictum mattis. Mauris lacinia elit purus, sit amet posuere lectus maximus varius. Proin sed rutrum ligula. Duis sodales iaculis lorem, ac pulvinar augue ultricies at. Sed ut neque ex.</p>
-	    			<p>Donec a euismod augue. Pellentesque vitae sagittis sapien, ac sodales ex. Mauris malesuada ante eu augue tincidunt dignissim. Nam nec ornare massa. Fusce non aliquet lorem. Integer vitae consectetur quam. Vestibulum aliquam diam eget mi eleifend convallis. Phasellus rutrum tortor at nunc elementum hendrerit. Maecenas sit amet mi vestibulum, condimentum ligula at, congue nunc. Morbi eget convallis lectus. Donec scelerisque tellus tellus.</p>
+    				<h2>Mood Teller</h2>
+    				<p>Please type in your name and your current mood</p>
+    				<form id="moodForm" action = "#">
+    					<label>Name:</label>
+    					<input type="text" id="name" placeholder="What is your name?">
+    					<br><br>
+    					<label>Mood:</label>
+    					<input type="text" id="mood" placeholder="How are you feeling?">
+    					<br><br>
+    					<button onclick="showMood()"> Tell Me </button> 
+    					<button onclick="clearMood()"> Clear Mood </button>
+    				</form>
+    				<div id="output"></div>
 	    		</article>
     		</section>
     		<aside>

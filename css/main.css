@@ -59,10 +59,9 @@ textarea {
 
 body {
     font-family: Arial;
-    font-size: 12 px;
-    background: #fff;
+    font-size: 13 px;
+    background: #ccc;
 }
-
 ul {
     padding: 0;
     margin: 0;
@@ -72,7 +71,8 @@ ul {
     width: 85%;
     margin:10px auto;
     overflow: auto;
-    border-radius: 10px;    
+    border-radius: 10px; 
+    background: #fff;   
 }
 
 header#main {
@@ -93,7 +93,7 @@ nav a {
 }
 
 nav a:hover{
-    color: black;
+    color: gray;
 }
 
 nav li {
@@ -107,6 +107,7 @@ main {
 }
 
 section#main {
+    position: relative;
     width: 70%;
     float: left;
 }
@@ -119,12 +120,13 @@ footer {
     padding: 20px;
     text-align: center;
 }
-
-
-
-
-
-
+#output {
+    position: absolute;
+    top:20%;
+    left:400px;
+    font-size: 250%;
+    width: 260 px;
+}
 
 
 
