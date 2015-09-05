@@ -79,11 +79,11 @@ ul, li {
 	height: 50px;
 	overflow: hidden;
 	background: #333;
-	margin: 20 px;
+	margin-bottom: 20px;
 }
 
 #branding h1 {
-	padding-left: 30%;
+	padding-left: 70px;
 	padding-top: 1%;
 	color: #fff;
 	margin: 0 !important;
@@ -96,7 +96,7 @@ ul, li {
 
 #branding img {
 	position: absolute;
-	width: 60 px;
+	width: 60px;
 	height: auto;
 }
 
@@ -149,14 +149,18 @@ article h2 {
 	padding-top: 10px;
 }
 
-article.meta {
+article .meta {
 	margin: 10px 0 10px 0;
 	padding: 5px;
 	background: #333;
 	color: #fff;
 }
 
-a.readmore {
+article .meta span {
+	float: right;
+}
+
+article .readmore {
 	background: #f4f4f4;
 	color: #000;
 	width: 97%;
@@ -167,7 +171,7 @@ a.readmore {
 	border-radius: 10px;
 }
 
-a.readmore:hover {
+article .readmore:hover {
 	background-color: #ccc;
 }
 
@@ -187,11 +191,13 @@ a.readmore:hover {
 	width: 85%;
 	padding: 3px;
 	float: left;
+	margin-top: 20px;
 }
 
 .search input[type="image"] {
 	width: 10%;
 	float: right;
+	margin-top: 20px;
 }
 
 #sub-nav {
@@ -214,11 +220,48 @@ a.readmore:hover {
 	color: #ff0000;
 }
 
-.ad {
+.ad img {
 	width: 100%;
 }
 
+#main-footer {
+	background: #333;
+	color: #fff;
+	min-height: 180px;
+	margin-top: 20px;
+	overflow: auto;
+}
 
+#main-footer a {
+	color: #fff;
+}
+
+#main-footer .copy {
+	padding: 20px 0 0 0;
+}
+
+#main-footer .footer-left {
+	float: left;
+	width: 30%;
+}
+
+#main-footer .footer-right {
+	float: right;
+	width: 70%;
+}
+
+#main-footer .footer-nav {
+	float: left;
+	font-size: 15px;
+	width: 31%;
+	margin-right: 10px;
+	padding: 20px 0 20px 0;
+}
+#main-footer .footer-nav li {
+	padding: 5px 0 5px 0;
+	border-bottom: dotted #666 1px;
+	list-style: none;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
