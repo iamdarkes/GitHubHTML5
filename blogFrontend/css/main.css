@@ -75,6 +75,7 @@ ul, li {
 	width: 80%;
 	overflow: hidden;
 }
+
 #main-header {
 	height: 50px;
 	overflow: hidden;
@@ -137,8 +138,10 @@ ul, li {
 }
 
 article {
-	border-bottom: 1px dotted #ccc;
-	padding: 10px 0 20px 0;
+	border: 1px solid #ccc;
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+	margin-bottom: 10px;
 }
 article img {
 	width: 100%;
@@ -222,6 +225,7 @@ article .readmore:hover {
 
 .ad img {
 	width: 100%;
+	margin-bottom: 10px;
 }
 
 #main-footer {
@@ -336,10 +340,48 @@ article .readmore:hover {
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 900px) {
+	#branding h1 {
+		display: none;
+	}
 
+	#branding {
+		width: 20%;
+	}
+
+	#main-nav {
+		width: 80%;
+	}
+
+	#sidebar {
+		float: none;
+		width: 100%;
+	}
+
+	#content {
+		float:none;
+		width: 100%;
+	}
+
+	#main-footer .footer-left, #main-footer .footer-right {
+		float: none;
+		width: 100%
+	}
+
+	#main-footer .footer-nav {
+		float: none;
+		width: 100%;
 }
 
+	#main-footer .copy {
+		text-align: center;
+	}
+@media only screen and (max-width: 580px) {
+	#main-nav li {
+	list-style: none;
+	}
+
+}
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
        (-webkit-min-device-pixel-ratio: 1.25),
